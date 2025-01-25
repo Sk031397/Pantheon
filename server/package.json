@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "cd ../client && npm start --prefix client",
+    "server": "nodemon server.js --ignore client",
+    "dev": "concurrently \"npm run server\"\npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "body-parser": "^2.0.2",
+    "cookie-parser": "^1.4.7",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "docusign-esign": "^8.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  }
+}
